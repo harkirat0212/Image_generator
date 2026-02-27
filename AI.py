@@ -6,10 +6,10 @@ import requests
 import base64
 import time
 from PIL import Image, ImageOps
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 
-load_dotenv()
+# load_dotenv()
 
 st.set_page_config(page_title="Cinematic Persona Machine", layout="centered")
 
@@ -403,4 +403,5 @@ if st.session_state.get("show_variants"):
             st.error("No image was generated. Please check your API key and try again.")
 
 st.divider()
+
 st.markdown("<center>Made with 🎬 Streamlit & Freepik Mystic AI</center>", unsafe_allow_html=True)
